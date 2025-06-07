@@ -1,4 +1,4 @@
-# Project RAG base (หรือ Project RAG Demo)
+# Project RAG base
 
 ## Project Overview
 This project implements a basic Retrieval Augmented Generation (RAG) system. It can answer questions based on a provided set of documents by:

@@ -1,0 +1,273 @@
+{
+  "dishes": [
+    {
+      "id": "a1f5c9d2-3b4e-47f2-8e12-9c4a5f6b7d8e",
+      "source": "internal_menu_db",
+      "last_updated": "2025-06-01T09:30:00Z",
+      "tags": ["vegetarian", "italian", "low-fat"],
+      "language": "en-US",
+      "name": "Margherita Pizza",
+      "category": ["Vegetarian", "Italian"],
+      "description": "Classic Neapolitan pizza topped with fresh mozzarella, tomato sauce and basil.",
+      "ingredients": [
+        "Pizza dough",
+        "Tomato sauce",
+        "Fresh mozzarella",
+        "Basil leaves",
+        "Olive oil"
+      ],
+      "nutrition": {
+        "kcal": 280,
+        "protein_g": 12,
+        "fat_g": 10,
+        "carbs_g": 33,
+        "fiber_g": 2,
+        "sugar_g": 4
+      },
+      "allergens": ["gluten", "dairy"],
+      "dietary_tags": ["vegetarian"],
+      "price_thb": 320,
+      "prep_time_min": 15,
+      "popularity_score": 4.7,
+      "image_url": "https://example.com/images/margherita.jpg"
+    },
+    {
+      "id": "b2e7d8f3-5c6a-49d3-9f21-0b7c8d9e1f2a",
+      "source": "internal_menu_db",
+      "last_updated": "2025-06-02T11:15:00Z",
+      "tags": ["seafood", "salad", "high-protein"],
+      "language": "en-US",
+      "name": "Grilled Salmon Salad",
+      "category": ["Seafood", "Salad"],
+      "description": "Fresh mixed greens topped with perfectly grilled Atlantic salmon and house vinaigrette.",
+      "ingredients": [
+        "Mixed greens",
+        "6 oz Atlantic salmon",
+        "Cherry tomatoes",
+        "Cucumber",
+        "House vinaigrette"
+      ],
+      "nutrition": {
+        "kcal": 350,
+        "protein_g": 28,
+        "fat_g": 18,
+        "carbs_g": 12,
+        "fiber_g": 3,
+        "sugar_g": 5
+      },
+      "allergens": ["fish"],
+      "dietary_tags": ["pescatarian", "gluten-free"],
+      "price_thb": 420,
+      "prep_time_min": 12,
+      "popularity_score": 4.5,
+      "image_url": "https://example.com/images/salmon_salad.jpg"
+    },
+    {
+      "id": "c3f8e9a4-6d7b-40e8-af32-1d9e0f2b3c4d",
+      "source": "internal_menu_db",
+      "last_updated": "2025-06-03T14:00:00Z",
+      "tags": ["mexican", "gluten-free", "hearty"],
+      "language": "en-US",
+      "name": "Beef Burrito Bowl",
+      "category": ["Mexican", "Gluten-Free Option"],
+      "description": "Seasoned ground beef bowl with rice, beans, corn, and fresh avocado salsa.",
+      "ingredients": [
+        "Seasoned ground beef",
+        "Brown rice",
+        "Black beans",
+        "Corn kernels",
+        "Avocado",
+        "Salsa"
+      ],
+      "nutrition": {
+        "kcal": 520,
+        "protein_g": 25,
+        "fat_g": 22,
+        "carbs_g": 55,
+        "fiber_g": 8,
+        "sugar_g": 4
+      },
+      "allergens": [],
+      "dietary_tags": ["gluten-free"],
+      "price_thb": 380,
+      "prep_time_min": 20,
+      "popularity_score": 4.6,
+      "image_url": "https://example.com/images/burrito_bowl.jpg"
+    },
+    {
+      "id": "d4a1b2c5-8e9f-4102-bf43-2e1f3a4b5c6d",
+      "source": "internal_menu_db",
+      "last_updated": "2025-06-04T16:45:00Z",
+      "tags": ["vegan", "bowl", "plant-based"],
+      "language": "en-US",
+      "name": "Vegan Buddha Bowl",
+      "category": ["Vegan", "Bowl"],
+      "description": "Colorful bowl with quinoa, roasted sweet potato, chickpeas and creamy tahini dressing.",
+      "ingredients": [
+        "Quinoa",
+        "Roasted sweet potato",
+        "Chickpeas",
+        "Kale",
+        "Tahini dressing"
+      ],
+      "nutrition": {
+        "kcal": 410,
+        "protein_g": 14,
+        "fat_g": 16,
+        "carbs_g": 58,
+        "fiber_g": 10,
+        "sugar_g": 7
+      },
+      "allergens": ["sesame"],
+      "dietary_tags": ["vegan", "plant-based"],
+      "price_thb": 350,
+      "prep_time_min": 18,
+      "popularity_score": 4.3,
+      "image_url": "https://example.com/images/buddha_bowl.jpg"
+    },
+    {
+      "id": "e5b2c3d6-9f10-4213-cf54-3f2a4b5c6d7e",
+      "source": "internal_menu_db",
+      "last_updated": "2025-06-05T13:20:00Z",
+      "tags": ["grill", "american", "comfort-food"],
+      "language": "en-US",
+      "name": "Classic Cheeseburger",
+      "category": ["Grill", "American"],
+      "description": "Juicy beef patty with cheddar, fresh veggies in a toasted brioche bun.",
+      "ingredients": [
+        "Beef patty",
+        "Cheddar cheese",
+        "Lettuce",
+        "Tomato",
+        "Onion",
+        "Brioche bun"
+      ],
+      "nutrition": {
+        "kcal": 630,
+        "protein_g": 32,
+        "fat_g": 34,
+        "carbs_g": 45,
+        "fiber_g": 3,
+        "sugar_g": 5
+      },
+      "allergens": ["gluten", "dairy"],
+      "dietary_tags": ["none"],
+      "price_thb": 380,
+      "prep_time_min": 22,
+      "popularity_score": 4.8,
+      "image_url": "https://example.com/images/cheeseburger.jpg"
+    }
+  ],
+  "hotels": [
+    {
+      "hotel_id": "h1001",
+      "source": "hotel_sunshine_cms",
+      "last_updated": "2025-06-02T08:00:00Z",
+      "tags": ["boutique", "urban", "business"],
+      "language": "en-US",
+      "name": "Hotel Sunshine",
+      "address": "123 Sunshine Ave, Downtown Metropolis, Countryland",
+      "geo_location": {
+        "lat": 12.345678,
+        "lng": 98.765432
+      },
+      "description": "A four-star urban boutique hotel in the heart of Metropolis.",
+      "room_types": [
+        {
+          "room_id": "h1001-r1",
+          "type": "Standard Queen",
+          "size_sqft": 250,
+          "bed": "Queen",
+          "view": "City view",
+          "price_per_night_thb": 2500,
+          "amenities": ["Free Wi-Fi", "Air conditioning"],
+          "availability": [
+            {"date": "2025-06-10", "available": true},
+            {"date": "2025-06-11", "available": false}
+          ]
+        },
+        {
+          "room_id": "h1001-r2",
+          "type": "Deluxe King",
+          "size_sqft": 350,
+          "bed": "King",
+          "view": "Skyline view",
+          "price_per_night_thb": 3500,
+          "amenities": ["Free Wi-Fi", "Minibar", "City skyline view"],
+          "availability": [
+            {"date": "2025-06-10", "available": true},
+            {"date": "2025-06-11", "available": true}
+          ]
+        },
+        {
+          "room_id": "h1001-r3",
+          "type": "Suite",
+          "size_sqft": 600,
+          "bed": "King",
+          "view": "Skyline view, Balcony",
+          "price_per_night_thb": 5500,
+          "amenities": ["Free Wi-Fi", "Living area", "Kitchenette", "Balcony"],
+          "availability": [
+            {"date": "2025-06-10", "available": false},
+            {"date": "2025-06-11", "available": true}
+          ]
+        }
+      ],
+      "amenities": [
+        "High-speed Wi-Fi",
+        "24-hour fitness center",
+        "Indoor lap pool",
+        "On-site restaurant “Solstice”",
+        "Rooftop bar “Aurora”",
+        "Business center"
+      ],
+      "policies": {
+        "check_in": "15:00",
+        "check_out": "12:00",
+        "cancellation": "Free up to 48 hours before arrival",
+        "pet_policy": "Pets allowed (max 20 lbs, USD 50/night)",
+        "smoking": "Non-smoking (USD 250 fee)"
+      },
+      "nearby_attractions": [
+        {
+          "name": "City Museum",
+          "distance_mi": 0.5,
+          "hours": "10:00-18:00"
+        },
+        {
+          "name": "Guardian Park",
+          "distance_mi": 0.2,
+          "hours": "06:00-20:00"
+        },
+        {
+          "name": "Grand Convention Center",
+          "distance_mi": 1.0,
+          "hours": "Varies by event"
+        }
+      ],
+      "contact_info": {
+        "phone": "+1-555-123-4567",
+        "email": "info@hotelsunshine.com",
+        "website": "https://hotelsunshine.example.com"
+      },
+      "images": [
+        "https://example.com/hotelsunshine/lobby.jpg",
+        "https://example.com/hotelsunshine/rooftop.jpg"
+      ],
+      "reviews": [
+        {
+          "review_id": "rev001",
+          "user": "Alice K.",
+          "rating": 4.8,
+          "comment": "Great location and friendly staff!"
+        },
+        {
+          "review_id": "rev002",
+          "user": "John D.",
+          "rating": 4.5,
+          "comment": "Lovely rooftop bar with amazing views."
+        }
+      ]
+    }
+  ]
+}

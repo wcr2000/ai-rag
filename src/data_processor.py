@@ -1,4 +1,5 @@
 import os
+import json
 from pathlib import Path
 from typing import List, Union
 
@@ -21,10 +22,14 @@ def load_documents_from_directory(directory_path: Union[str, Path]) -> List[Lang
     for file_path in path.iterdir():
         content = ""
         metadata = {"source": str(file_path.name)}
+
+        # ---- TXT ----
         if file_path.suffix == ".txt":
             with open(file_path, "r", encoding="utf-8") as f:
                 content = f.read()
             documents.append(LangchainDocument(page_content=content, metadata=metadata))
+
+        # ---- PDF ----
         elif file_path.suffix == ".pdf":
             try:
                 reader = PdfReader(file_path)
@@ -36,6 +41,36 @@ def load_documents_from_directory(directory_path: Union[str, Path]) -> List[Lang
                         documents.append(LangchainDocument(page_content=content, metadata=doc_metadata))
             except Exception as e:
                 print(f"Error reading PDF {file_path.name}: {e}")
+
+        # ---- JSON ----
+        elif file_path.suffix == ".json":
+            try:
+                with open(file_path, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+
+                # list of objects
+                if isinstance(data, list):
+                    for idx, entry in enumerate(data):
+                        text = entry.get("text") or json.dumps(entry, ensure_ascii=False)
+                        md = metadata.copy()
+                        md["json_index"] = idx
+                        if isinstance(entry, dict) and "metadata" in entry:
+                            md.update(entry["metadata"])
+                        documents.append(LangchainDocument(page_content=text, metadata=md))
+
+                # only one dict 
+                elif isinstance(data, dict):
+                    text = data.get("text") or json.dumps(data, ensure_ascii=False)
+                    md = metadata.copy()
+                    if "metadata" in data and isinstance(data["metadata"], dict):
+                        md.update(data["metadata"])
+                    documents.append(LangchainDocument(page_content=text, metadata=md))
+
+                else:
+                    print(f"Unsupported JSON structure in {file_path.name}, skipping.")
+
+            except Exception as e:
+                print(f"Error reading JSON {file_path.name}: {e}")
         else:
             print(f"Unsupported file type: {file_path.name}. Skipping.")
             

@@ -1,0 +1,69 @@
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile
+.dockerignore # ตัวมันเองก็ไม่ต้อง copy เข้าไป
+
+# Python Virtual Environment
+env/
+venv/
+.venv/ # ชื่อนิยมอีกแบบ
+
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+
+# Distribution / packaging
+.eggs/
+*.egg
+dist/
+build/
+wheels/
+*.tar.gz
+*.whl
+
+# Notebooks (ถ้าไม่ต้องการให้รวมใน image production)
+notebooks/
+.ipynb_checkpoints/
+
+# Test files (ถ้าไม่ต้องการให้รวมใน image production)
+tests/
+src/tests/
+pytest_cache/
+.pytest_cache/
+htmlcov/
+.coverage
+nosetests.xml
+coverage.xml
+
+# IDE and OS specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Environment files (ควรจัดการผ่าน environment variables ตอน runtime)
+.env
+.env.*
+!.env.example # อาจจะอยากเก็บ .env.example ไว้
+
+# Log files
+*.log
+logs/
+
+# Local Vector Store and Data (พิจารณาตามความจำเป็น)
+# ถ้าคุณต้องการ build index ภายใน image หรือ copy data เข้าไป, ให้ comment บรรทัดเหล่านี้ออก
+# แต่ถ้า index/data ใหญ่มาก ควรจัดการผ่าน volume หรือวิธีอื่นนอก image
+vector_store_index/
+data/
+
+# Other project specific files/folders to ignore
+# เช่น node_modules ถ้ามี
+# node_modules/
