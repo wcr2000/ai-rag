@@ -9,7 +9,7 @@ This project implements a basic Retrieval Augmented Generation (RAG) system. It 
 This demonstrates a fundamental data pipeline for RAG (data ingestion, chunking, embedding) and the application of ML models (embedding model, LLM).
 
 ## Features
-*   **Document Loading:** Supports loading `.txt` and `.pdf` files from a specified directory.
+*   **Document Loading:** Supports loading `.txt` and `.pdf`, `.json` files from a specified directory.
 *   **Document Chunking:** Splits documents into smaller, manageable chunks for efficient processing.
 *   **Text Embedding Generation:** Uses OpenAI's embedding models (e.g., `text-embedding-ada-002`) to convert text chunks into vector representations. (Can be adapted for local Sentence-Transformers).
 *   **Vector Store Creation & Querying:** Utilizes FAISS (a local vector store) to store and efficiently search for relevant document chunks based on query similarity.
@@ -55,7 +55,7 @@ This demonstrates a fundamental data pipeline for RAG (data ingestion, chunking,
         ```
 
 5.  **Add documents:**
-    Place your `.txt` or `.pdf` documents into the `data/` directory. A `sample_document.txt` is provided.
+    Place your `.txt` or `.pdf`, `.json` documents into the `data/` directory. A `sample_document.txt` is provided.
 
 ## How to Run
 
