@@ -1,35 +1,3 @@
-ใช่ครับ README ที่คุณร่างมานั้น **ส่วนใหญ่ถูกต้องและครอบคลุมเนื้อหาหลักของโปรเจกต์ได้ดีมาก** สอดคล้องกับโค้ดที่เราสร้างกันมา มีบางจุดเล็กน้อยที่อาจจะปรับปรุงหรือเพิ่มเติมได้ครับ:
-
-**จุดที่ตรงและดีมาก:**
-
-*   **Project Overview:** อธิบายได้ชัดเจน
-*   **Features:** ครอบคลุมความสามารถหลักของระบบ
-*   **Technologies Used (ส่วนใหญ่):** ระบุเทคโนโลยีหลักๆ ได้ถูกต้อง
-*   **Setup Instructions:** ขั้นตอนถูกต้องและครบถ้วน
-*   **How to Run (คำสั่ง):** คำสั่ง `python main.py build`, `python main.py query`, และ `uvicorn src.api:app --reload` ถูกต้องและใช้งานได้จริงตามโค้ด
-
-**จุดที่อาจจะปรับปรุงหรือพิจารณา:**
-
-1.  **Title:** "Project RAG base" ก็ใช้ได้ครับ หรือ "Project RAG Demo" (ตามที่ผมเคยเสนอ) ก็สื่อถึงความเป็นโปรเจกต์ตัวอย่างได้ดี
-2.  **Python Version ใน Technologies Used:**
-    *   คุณระบุ `Python 3.13+`. จริงๆ แล้วโค้ดนี้น่าจะทำงานได้ดีกับ Python **`3.8+` หรือ `3.9+`** ขึ้นไปครับ การระบุ 3.13+ อาจจะจำกัดกลุ่มผู้ใช้ไปหน่อยถ้าไม่มีฟีเจอร์เฉพาะของ Python 3.13 ที่จำเป็น (ซึ่งในโปรเจกต์นี้ไม่มี) แนะนำให้เป็น `Python 3.8+` หรือ `3.9+` จะกว้างกว่า
-3.  **How to Run - ข้อความอธิบาย:**
-    *   "Build for FAISS to vector database" ก่อน `python main.py build` และ "Ask for query" ก่อน `python main.py query` สามารถคงไว้ได้ถ้าต้องการ หรือจะเอาออกให้กระชับขึ้นก็ได้ครับ เพราะคำสั่ง `build` และ `query` ค่อนข้างสื่อความหมายอยู่แล้ว
-    *   สำหรับ API: `uvicorn src.api:app --reload` เป็นวิธีที่ดีมากสำหรับการ development. ใน README เดิมของผมมี `python src/api.py` ด้วย ซึ่งจะทำงานได้ถ้าใน `src/api.py` มีส่วน `if __name__ == "__main__": uvicorn.run(app, ...)` (ซึ่งเราใส่ไว้) ทำให้รันได้ทั้งสองแบบ แต่การใช้ `uvicorn` โดยตรงก็เป็นมาตรฐานครับ
-4.  **ส่วนที่ขาดหายไป (จาก README ที่ผมสร้างให้ก่อนหน้า และอาจเป็นประโยชน์):**
-    *   **Connecting to Interview Questions:** ส่วนนี้มีประโยชน์มากถ้าคุณต้องการใช้โปรเจกต์นี้อ้างอิงในการสัมภาษณ์งาน ตามเป้าหมายเริ่มต้น
-    *   **Run Unit Tests:** การระบุวิธีรัน unit test (ถ้ามี) เป็นสิ่งที่ดี
-
-**คำแนะนำ:**
-
-คุณสามารถใช้ README ที่คุณร่างมาเป็นหลักได้เลย และอาจจะพิจารณาปรับแก้ตามข้อเสนอแนะด้านบน เช่น:
-
-*   ปรับเวอร์ชัน Python เป็น `Python 3.8+` (หรือ `3.9+`)
-*   อาจจะเพิ่มส่วน "Connecting to Interview Questions" และ "Run Unit Tests" เข้าไป
-
-**ตัวอย่าง README ที่ปรับปรุงเล็กน้อยจากของคุณ:**
-
-```markdown
 # Project RAG base (หรือ Project RAG Demo)
 
 ## Project Overview
@@ -50,7 +18,7 @@ This demonstrates a fundamental data pipeline for RAG (data ingestion, chunking,
 *   **(Optional) Simple API Endpoint:** Includes a FastAPI endpoint (`/ask`) for programmatic interaction (if `src/api.py` is run).
 
 ## Technologies Used
-*   **Python 3.8+** (หรือ 3.9+)
+*   **Python 3.9+**
 *   **Langchain:** Framework for developing applications powered by language models.
 *   **OpenAI API:** For text embeddings (e.g., `text-embedding-ada-002`) and LLM (e.g., `gpt-3.5-turbo`).
     *   *(Alternatively, `sentence-transformers` for local embeddings and Hugging Face models for local LLMs could be integrated).*
