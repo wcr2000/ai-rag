@@ -51,7 +51,7 @@ This demonstrates a fundamental data pipeline for RAG (data ingestion, chunking,
         ```
     *   Edit the `.env` file and add your OpenAI API key:
         ```
-        OPENAI_API_KEY="your_actual_openai_api_key_here"
+        OPENAI_API_KEY="INPUT_OPENAPI_KEY"
         ```
 
 5.  **Add documents:**
@@ -79,12 +79,6 @@ To run the API for programmatic access:
 uvicorn src.api:app --reload
 ```
 The API will be available at `http://127.0.0.1:8000`. Access interactive documentation at `http://127.0.0.1:8000/docs`.
-
-### 4. (Optional) Run Unit Tests
-To run available unit tests (e.g., for the data processor):
-```bash
-python -m unittest src.tests.test_data_processor
-```
 
 ## Connecting to Interview Questions (Example)
 *   "Give me a room type"
