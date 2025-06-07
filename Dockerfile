@@ -39,6 +39,9 @@ COPY ./main.py ./main.py
 # --- Option 2: Expect vector_store_index to be mounted as a volume (Recommended) ---
 # If you use this, 'vector_store_index/' SHOULD be in your .dockerignore.
 
+COPY ./data ./data
+COPY ./vector_store_index ./vector_store_index
+
 # Set environment variables
 ENV PYTHONUNBUFFERED=1
 ENV PYTHONPATH=/app

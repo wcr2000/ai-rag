@@ -61,8 +61,8 @@ logs/
 # Local Vector Store and Data (พิจารณาตามความจำเป็น)
 # ถ้าคุณต้องการ build index ภายใน image หรือ copy data เข้าไป, ให้ comment บรรทัดเหล่านี้ออก
 # แต่ถ้า index/data ใหญ่มาก ควรจัดการผ่าน volume หรือวิธีอื่นนอก image
-vector_store_index/
-data/
+# vector_store_index/
+# data/
 
 # Other project specific files/folders to ignore
 # เช่น node_modules ถ้ามี
