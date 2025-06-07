@@ -80,6 +80,11 @@ uvicorn src.api:app --reload
 ```
 The API will be available at `http://127.0.0.1:8000`. Access interactive documentation at `http://127.0.0.1:8000/docs`.
 
+Docker build
+```bash
+docker build -t project-rag-api .
+```
+
 ## Connecting to Interview Questions (Example)
 *   "Give me a room type"
 *   "Give me a food menu for me to day i want to eat like a pizza"
