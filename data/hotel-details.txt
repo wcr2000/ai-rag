@@ -1,0 +1,25 @@
+Hotel Sunshine is a four-star urban boutique hotel located in downtown Metropolis, offering 120 rooms and comprehensive guest services.
+
+1. Room Types
+   - Standard Queen: 1 queen bed, 250 sq ft, city view.
+   - Deluxe King: 1 king bed, 350 sq ft, skyline view, complimentary minibar.
+   - Suite: 1 king bed, living area, 600 sq ft, kitchenette, balcony.
+
+2. Amenities
+   - Free high‐speed Wi-Fi throughout the property.
+   - 24-hour fitness center and indoor lap pool.
+   - On-site restaurant “Solstice” serving international cuisine.
+   - Rooftop bar “Aurora” with panoramic city views.
+   - Business center, meeting rooms capacity up to 100 guests.
+   - Airport shuttle service (surcharge applies).
+
+3. Policies
+   - Check-in: after 3 PM; Check-out: by 12 PM.
+   - Cancellation: Free up to 48 hours before arrival.
+   - Pet policy: Pets allowed (max 20 lbs, USD 50/night fee).
+   - Smoking: Strictly non-smoking; USD 250 cleaning fee for violations.
+
+4. Nearby Attractions
+   - City Museum: 0.5 mi, open daily 10 AM–6 PM.
+   - Guardian Park: 0.2 mi, jogging track and botanical gardens.
+   - Grand Convention Center: 1.0 mi, hosts major events and conferences.

@@ -1,0 +1,26 @@
+Our menu showcases a variety of dishes, each with category, ingredients, and nutritional highlights.
+
+1. Margherita Pizza
+   - Category: Vegetarian, Italian
+   - Ingredients: Pizza dough, tomato sauce, fresh mozzarella, basil, olive oil
+   - Nutrition (per slice): 280 kcal, 12 g protein, 10 g fat, 33 g carbs
+
+2. Grilled Salmon Salad
+   - Category: Seafood, Salad
+   - Ingredients: Mixed greens, 6 oz Atlantic salmon, cherry tomatoes, cucumber, vinaigrette
+   - Nutrition: 350 kcal, 28 g protein, 18 g fat, 12 g carbs
+
+3. Beef Burrito Bowl
+   - Category: Mexican, Gluten-Free Option
+   - Ingredients: Seasoned ground beef, brown rice, black beans, corn, avocado, salsa
+   - Nutrition: 520 kcal, 25 g protein, 22 g fat, 55 g carbs
+
+4. Vegan Buddha Bowl
+   - Category: Vegan, Bowl
+   - Ingredients: Quinoa, roasted sweet potato, chickpeas, kale, tahini dressing
+   - Nutrition: 410 kcal, 14 g protein, 16 g fat, 58 g carbs
+
+5. Classic Cheeseburger
+   - Category: Grill, American
+   - Ingredients: Beef patty, cheddar cheese, lettuce, tomato, onion, brioche bun
+   - Nutrition: 630 kcal, 32 g protein, 34 g fat, 45 g carbs
